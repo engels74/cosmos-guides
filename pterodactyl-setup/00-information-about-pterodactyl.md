@@ -24,7 +24,9 @@ I'll also demonstrate how to import different game servers, known as "eggs," and
 
 {% hint style="info" %}
 **Disclaimer:**\
-This guide was created with a fresh VPS and a fresh domain. I'm using Cloudflare as my DNS provider, with a Wildcard SSL certificate. I've tested the steps multiple times, formatting and starting over, and they should work across multiple systems.\\
+This guide was created with a cheap Ubuntu 22.04LTS VPS and a brand new domain.&#x20;
+
+I'm using Cloudflare as my DNS provider, with a Wildcard SSL certificate. I've tested the steps multiple times, formatting and starting over, and they should work across multiple systems.
 
 Your mileage of success might vary. But it has worked for me and a few others, so hopefully it'll work for you to.
 

@@ -11,6 +11,8 @@ I made this Gitbook tutorial site because I needed a place to write detailed tut
 
 This was originally intended to only hold a tutorial for installing Pterodactyl Panel and Wings, but it may be expanded if I discover other software that requires additional explanation.
 
+##
+
 ## Index of the Guides:
 
 ### Docker & Cosmos setup
