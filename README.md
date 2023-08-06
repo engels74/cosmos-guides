@@ -15,14 +15,14 @@ This was originally intended to only hold a tutorial for installing Pterodactyl 
 
 ### Docker & Cosmos setup
 
-#### [Docker & Compose Setup](https://github.com/engels74/cosmos-test11/blob/main/broken-reference/README.md)
+#### [Docker & Compose Setup](broken-reference)
 
-#### [Cosmos Server Setup](https://github.com/engels74/cosmos-test11/blob/main/broken-reference/README.md)
+#### [Cosmos Server Setup](broken-reference)
 
 ###
 
 ### Pterodactyl®
 
-#### [Pterodactyl Setup](https://github.com/engels74/cosmos-test11/blob/main/broken-reference/README.md) (in Cosmos)
+#### [Pterodactyl Setup](broken-reference) (in Cosmos)
 
-#### [Using Pterodactyl](https://github.com/engels74/cosmos-test11/blob/main/broken-reference/README.md)
+#### [Using Pterodactyl](broken-reference)
