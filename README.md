@@ -1,5 +1,5 @@
 ---
-description: Just a short overview
+description: A collection of guides for Azukaar's "Cosmos Server" software
 coverY: 0
 ---
 
