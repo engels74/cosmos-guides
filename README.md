@@ -1,5 +1,7 @@
 ---
 description: A collection of guides for Azukaar's "Cosmos Server" software
+cover: >-
+  https://images.unsplash.com/photo-1465101162946-4377e57745c3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxjb3Ntb3N8ZW58MHx8fHwxNzA4MTc5ODk0fDA&ixlib=rb-4.0.3&q=85
 coverY: 0
 ---
 
