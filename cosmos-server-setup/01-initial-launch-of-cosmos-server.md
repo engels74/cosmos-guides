@@ -10,26 +10,35 @@ curl -4 icanhazip.com
 
 2. This will output your Public IPv4, which we will need when we first set up Cosmos Server.
 
-### Heading into Cosmos
+### Checking if Cosmos Server is running
 
-1. Now we should run `dcup`, which will start our Cosmos Server.
-2. If, for some reason, the `dcup` fails, you can run the command manually, using
+1. In the previous installation step, we ran the `docker run` command, which automatically started Cosmos Server.
+2. It should therefore already be running. You can confirm this by running:
 
 ```bash
-docker compose -f /opt/docker-all/docker-compose.yml up -d
+docker ps -a
 ```
 
-3. Enter your public IPv4 + port "80" into your browser to access your Cosmos instance. In my case, it looks like this:
+3. The output should show Cosmos Server running:
+
+```bash
+CONTAINER ID   IMAGE                          COMMAND                  CREATED         STATUS         PORTS     NAMES
+cb1e2031f830   azukaar/cosmos-server:latest   "sh -c './$(cat /bin…"   2 minutes ago   Up 2 minutes             cosmos-server
+```
+
+4. From a console point of view, it should simply look like this:
+
+[![asciicast](https://asciinema.org/a/KMmyTt87vuPk0JKwoTBzboGvS.svg)](https://asciinema.org/a/KMmyTt87vuPk0JKwoTBzboGvS)
+
+### Heading into Cosmos
+
+1. Enter your public IPv4 + port "80" into your browser to access your Cosmos instance. In my case, it looks like this:
 
 ```bash
 89.33.85.247:80
 ```
 
-4. From a console point of view, it should look like this:
-
-[![asciicast](https://asciinema.org/a/65zp6Cgng1KT45WGbwIZBhkQd.svg)](https://asciinema.org/a/65zp6Cgng1KT45WGbwIZBhkQd)
-
-5. When you visit your URL, it should look like this:
+2. When you visit your URL, it should look like this:
 
 <figure><img src="https://i.imgur.com/acDhkMR.png" alt="" width="563"><figcaption></figcaption></figure>
 

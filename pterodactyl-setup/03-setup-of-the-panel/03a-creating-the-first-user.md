@@ -16,9 +16,9 @@ docker exec -it pt-panel php artisan p:user:make
 7. You can now login to your panel!
 
 {% hint style="warning" %}
-**Warning:** Make sure you enter the right password the first time - it won't ask twice!
+**Warning:** Make sure you enter the right password the first time - it won't ask twice
 {% endhint %}
 
-[![asciicast](https://asciinema.org/a/RBaETwV8o0mHxwCcnHFlq8ycr.svg)](https://asciinema.org/a/RBaETwV8o0mHxwCcnHFlq8ycr)
+[![asciicast](https://asciinema.org/a/GfSOVuYOhE24B6XTQkmbixSHT.svg)](https://asciinema.org/a/GfSOVuYOhE24B6XTQkmbixSHT)
 
 ### On to the next step!

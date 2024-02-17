@@ -12,7 +12,7 @@ Don't worry if it sounds complicated; I'll walk you through the process.
 4. You can leave the **Description** field blank or fill it with whatever information you think is necessary.
 5. The **Location** should be set to the one you [just created](03b-setting-up-a-location.md).
 6. The **Node Visibility** should be set to **Public** (at least for now).
-7. Set the **FQDN** to the reverse proxied URL we created for the `pt-wings` container. That would be `pterodactylnode.engels.zip` in my case.
+7. Set the **FQDN** to the reverse proxied URL we created for the `pt-wings` container. That would be `pt-wings.engels.zip` in my case.
 8. For the **Communicate Over SSL**, set it to **Use SSL Connection**.
 9. For the **Behind Proxy**, set it to **Behind Proxy**.
 10. The **Daemon Server File Directory** should be left at its default value of `/var/lib/pterodactyl/volumes`. This is where all of the game server data will be stored, in separate folders. This is set in the [docker compose example](../01-installing-pterodactyl/01a-the-docker-compose-example.md).
@@ -24,8 +24,9 @@ Don't worry if it sounds complicated; I'll walk you through the process.
 16. The **Daemon SFTP Port** should remain at its default value of `2022`. This is the port that every SFTP server created by Pterodactyl Wings will use.
 17. Now you select **Create Node**: <img src="https://i.imgur.com/WfdMcBv.png" alt="" data-size="line">
 18. After that, it'll continue to [IP and Port allocation](03d-ip-and-port-allocation.md) - so you can go ahead to the next step in this tutorial :thumbsup:
-19. Mine looks like thisGIF Guide
 
-<figure><img src="https://i.imgur.com/yWNvEDk.gif" alt=""><figcaption></figcaption></figure>
+### GIF Guide
+
+<figure><img src="https://i.imgur.com/c6ZEodn.gif" alt=""><figcaption></figcaption></figure>
 
 ### On to the next step!

@@ -7,6 +7,6 @@
 3. Go to the **Servers** menu: <img src="https://i.imgur.com/hQXdaAU.png" alt="" data-size="line">
 4. Select **Create New**: <img src="https://i.imgur.com/UCIxaPn.png" alt="" data-size="line">
 
-<figure><img src="https://i.imgur.com/WbSkW4s.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://i.imgur.com/zw8Ji4a.gif" alt=""><figcaption></figcaption></figure>
 
 ### On to the next step!

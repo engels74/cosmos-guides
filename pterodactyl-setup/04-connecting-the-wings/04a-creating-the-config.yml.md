@@ -10,23 +10,23 @@ For this section, we'll create a proper 'config.yml' file for our 'pt-wings' con
 
 ```yaml
 debug: false
-uuid: 89383819-4343-4978-b335-07d99252bb8f
-token_id: CILwtxlbX2Zz9FPO
-token: fq7gZYyMAaXlfZhdmZtZpaBUxCgbjXzcFL82TRJeZuZlQ3H9PYfFXmM6NrAehyWS
+uuid: 4b01fefb-9143-4ffb-9882-c97db8ba88c3
+token_id: ROsW3bzXVaaGjzQo
+token: oifI80cY1wBwVywEHKN1Us6ljTnz4uqjRuxp9x8fAWQvtQCBNZD2RNRtAPaLMmOY
 api:
   host: 0.0.0.0
   port: 443
   ssl:
     enabled: false
-    cert: /etc/letsencrypt/live/pterodactylnode.engels.zip/fullchain.pem
-    key: /etc/letsencrypt/live/pterodactylnode.engels.zip/privkey.pem
+    cert: /etc/letsencrypt/live/pt-wings.engels.zip/fullchain.pem
+    key: /etc/letsencrypt/live/pt-wings.engels.zip/privkey.pem
   upload_limit: 100
 system:
   data: /var/lib/pterodactyl/volumes
   sftp:
     bind_port: 2022
 allowed_mounts: []
-remote: 'https://pterodactyl.engels.zip'
+remote: 'https://pt-panel.engels.zip'
 ```
 
 {% hint style="warning" %}
@@ -59,7 +59,7 @@ This will cause the `pt-wings` to create a new network called `pterodactyl_nw`, 
 
 {% hint style="warning" %}
 **Remember** to change the `allowed_origins` URL, to the URL of your panel!\
-In my case, I would enter `pterodactyl.engels.zip` **without** `http` or `https`.
+In my case, I would enter `pt-panel.engels.zip` **without** `http` or `https`.
 {% endhint %}
 
 6. In my case, after I added the extra text, my `config.yml` will look like this:
@@ -97,7 +97,7 @@ docker:
         subnet: 172.41.0.0/16
         gateway: 172.41.0.1
 allowed_origins:
-- 'pterodactyl.engels.zip'
+- 'pt-panel.engels.zip'
 ```
 
 ### Saving the `config.yml` the right way
@@ -110,14 +110,14 @@ sudo nano /etc/pterodactyl/config.yml
 ```
 
 3. Paste the text into the terminal, press `CTRL-X` to finish editing, then `Y` to confirm and `ENTER` to save.
-4. Looks like this from a terminal point of view:
+4. Looks like this from a terminal point of view
 
-[![asciicast](https://asciinema.org/a/Qd6pOyiqrjgZ6TcaPypJvaQQd.svg)](https://asciinema.org/a/Qd6pOyiqrjgZ6TcaPypJvaQQd)
+[![asciicast](https://asciinema.org/a/KtPqWWdPUOuyFPgIY6aJWETJV.svg)](https://asciinema.org/a/KtPqWWdPUOuyFPgIY6aJWETJV)
 
-5. Now we can continue to the next step :thumbsup:
+3. Now we can continue to the next step :thumbsup:
 
 ### GIF Guide
 
-<figure><img src="https://i.imgur.com/4aEubLF.gif" alt=""><figcaption><p>Hopefully this helps, if you're confused about the process :)</p></figcaption></figure>
+<figure><img src="https://i.imgur.com/7njMbly.gif" alt=""><figcaption><p>Hopefully this helps out :)</p></figcaption></figure>
 
 ### On to the next step!

@@ -1,4 +1,4 @@
-# 01a) The Docker Compose example
+# 01b) The Docker Compose example
 
 ### The Docker Compose Example
 
@@ -13,11 +13,12 @@ nano /opt/docker-all/docker-compose.pt.yml
 
 {% hint style="warning" %}
 **Remember** to also change the `APP_URL`.\
-In my case, the subdomain `pterodactyl.engels.zip` is used. For the sake of simplicity, I recommend you keep the `pterodactyl` as your subdomain.
+In my case, the subdomain `pt-panel.engels.zip` is used. For the sake of simplicity, I recommend you keep the `pt-panel`as your subdomain.
 {% endhint %}
 
 ```yaml
 version: "3.9"
+name: pt-stack
 x-common:
   pt-database: &db-environment
     # Do not remove the "&db-password" from the end of the line below, it is important
@@ -25,7 +26,7 @@ x-common:
     MYSQL_PASSWORD: &db-password "!!Change This To Your Own Password!!"
     MYSQL_ROOT_PASSWORD: "!!Change This To A Different Password!!"
   pt-panel: &panel-environment
-    APP_URL: "https://pterodactyl.ChangeThisToYourDomain.com"
+    APP_URL: "https://pt-panel.ChangeThisToYourDomain.com"
     # A list of valid timezones can be found here: http://php.net/manual/en/timezones.php
     APP_TIMEZONE: "Europe/Berlin"
     APP_SERVICE_AUTHOR: "your@email.com"
@@ -47,13 +48,13 @@ x-common:
 #
 # The remainder of this file likely does not need to be changed. Please only make modifications
 # below if you understand what you are doing.
-#
 services:
   pt-database:
     container_name: pt-database
     image: mariadb:10.5
+    networks:
+      - cosmos-pt-all
     labels:
-      - "cosmos-force-network-secured=true"
       - "cosmos-auto-update=true"
     command: --default-authentication-plugin=mysql_native_password
     volumes:
@@ -68,13 +69,12 @@ services:
   pt-redis:
     container_name: pt-redis
     image: "redis:alpine"
+    networks:
+      - cosmos-pt-all
     labels:
-      - "cosmos-force-network-secured=true"
       - "cosmos-auto-update=true"
     environment:
       TZ: "Europe/Berlin" # You can change this to your timezone
-    ports:
-      - 6379:6379
     volumes:
       - /srv/pterodactyl/redis:/data
     command: redis-server --save 20 1 --loglevel warning
@@ -83,15 +83,10 @@ services:
   pt-panel:
     container_name: pt-panel
     image: ghcr.io/pterodactyl/panel:latest
+    networks:
+      - cosmos-pt-all
     labels:
-      - "cosmos-force-network-secured=true"
       - "cosmos-auto-update=true"
-    ports:
-      - "10080:80"
-      - "10443:443"
-    links:
-      - pt-redis
-      - pt-database
     volumes:
       - "/srv/pterodactyl/var:/app/var" # Don't change this
       - "/srv/pterodactyl/nginx:/etc/nginx/http.d" # Don't change this
@@ -114,10 +109,11 @@ services:
   pt-wings:
     container_name: pt-wings
     image: ghcr.io/pterodactyl/wings:latest
+    networks:
+      - cosmos-pt-all
     labels:
       - "cosmos-auto-update=true"
     ports:
-      - "8080:8080"
       - "2022:2022"
     tty: true
     environment:
@@ -133,14 +129,17 @@ services:
       - "/var/log/pterodactyl:/var/log/pterodactyl" # Don't change this
       - "/tmp/pterodactyl:/tmp/pterodactyl" # Don't change this
       - "/etc/ssl/certs:/etc/ssl/certs:ro" # Don't change this
-    network_mode: "bridge"
     restart: unless-stopped
+
+networks:
+  cosmos-pt-all:
+    external: true
 
 ```
 
 4. To close the file, use `CTRL-X`, press `Y` and then press `ENTER` to save the file in Nano.
 5. The whole process should look like this:
 
-[![asciicast](https://asciinema.org/a/2Ybj5JI4Nf2vMWA1I6P8v3cr0.svg)](https://asciinema.org/a/2Ybj5JI4Nf2vMWA1I6P8v3cr0)
+[![asciicast](https://asciinema.org/a/vVrkCqU6GQg3xkTtR94EAxP2k.svg)](https://asciinema.org/a/vVrkCqU6GQg3xkTtR94EAxP2k)
 
 ### On to the next step!

@@ -1,4 +1,4 @@
-# 01b) Launching Pterodactyl
+# 01c) Launching Pterodactyl
 
 ### Launching Pterodactyl
 
@@ -8,13 +8,14 @@
 docker compose -f /opt/docker-all/docker-compose.pt.yml up -d
 ```
 
-2. This will activate all Pterodactyl services at once. They'll probably launch connected to one of docker's default networks, named `docker-all_default` or something similar
+2. This will activate all Pterodactyl services at once
 
-[![asciicast](https://asciinema.org/a/L6f9pgtbH57XiFIPuX5TJe4OI.svg)](https://asciinema.org/a/L6f9pgtbH57XiFIPuX5TJe4OI)
+[![asciicast](https://asciinema.org/a/z9c20xJNQQTJkHBBgiOHecrR5.svg)](https://asciinema.org/a/z9c20xJNQQTJkHBBgiOHecrR5)
 
-2. We'll need to do a few things, before we continue with the installation.
-3. First of all, you should **Stop** the `pt-wings` container, since it'll keep restarting over and over for now.
+3. We'll need to do a few things, before we continue with the installation.
+4. First of all, you should **Stop** the `pt-wings` container, since it'll keep restarting over and over for now.
+5. You can find the `pt-wings` container inside the `pt-stack` .
 
-<figure><img src="https://i.imgur.com/qcX3ZWX.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://i.imgur.com/8TNwKG8.gif" alt=""><figcaption></figcaption></figure>
 
 ### On to the next step!

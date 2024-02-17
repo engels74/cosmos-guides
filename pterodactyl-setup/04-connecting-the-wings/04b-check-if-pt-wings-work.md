@@ -6,10 +6,10 @@ In this section, we'll verify that our config.yml works as expected. Then we'll 
 
 1. Finally, we can restart our pt-wings container:
 
-![](https://i.imgur.com/7rkDKBN.png)
+<figure><img src="https://i.imgur.com/oMssHNE.png" alt="" width="375"><figcaption></figcaption></figure>
 
-1. We should now examine the container's logs. To do so, navigate to the Logs menu in the pt-wings container's Details.
-2. Something along the lines of this should be there:
+2. We should now examine the container's logs. To do so, navigate to the Logs menu in the pt-wings container's Details.
+3. Something along the lines of this should be there:
 
 ```log
 2023-07-26 19:28:52
@@ -39,12 +39,12 @@ In this section, we'll verify that our config.yml works as expected. Then we'll 
 3. Go to the **Network** tab of the `pt-wings`: <img src="https://i.imgur.com/t8T5r9G.png" alt="" data-size="line">
 4. Find the `pterodactyl_nw` network and select **Connect**.
 
-<figure><img src="https://i.imgur.com/ryvgm0Q.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://i.imgur.com/T0t0ONo.gif" alt=""><figcaption></figcaption></figure>
 
 ### Check if the reverse proxy work
 
-1. To see if the `pt-wings` reverse proxying is working as intended, load up your `https://pterodactylnode.domain.com` site up in a new tab in your browser.
-2. In my case, that would be `https://pterodactylnode.engels.zip`.
+1. To see if the `pt-wings` reverse proxying is working as intended, load up your `https://pt-wings.domain.com` site up in a new tab in your browser.
+2. In my case, that would be `https://pt-wings.engels.zip`.
 3. It should give you this message:
 
 <pre class="language-json"><code class="lang-json"><strong>"The required authorization heads were not present in the request."

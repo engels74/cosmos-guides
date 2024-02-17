@@ -25,9 +25,9 @@
 
 * [00) Information about Pterodactyl](pterodactyl-setup/00-information-about-pterodactyl.md)
 * [01) Installing Pterodactyl](pterodactyl-setup/01-installing-pterodactyl/README.md)
-  * [01a) The Docker Compose example](pterodactyl-setup/01-installing-pterodactyl/01a-the-docker-compose-example.md)
-  * [01b) Launching Pterodactyl](pterodactyl-setup/01-installing-pterodactyl/01b-launching-pterodactyl.md)
-  * [01c) Isolating networks](pterodactyl-setup/01-installing-pterodactyl/01c-isolating-networks.md)
+  * [01a) Creating a network for Pterodactyl](pterodactyl-setup/01-installing-pterodactyl/01a-creating-a-network-for-pterodactyl.md)
+  * [01b) The Docker Compose example](pterodactyl-setup/01-installing-pterodactyl/01a-the-docker-compose-example.md)
+  * [01c) Launching Pterodactyl](pterodactyl-setup/01-installing-pterodactyl/01b-launching-pterodactyl.md)
 * [02) Creating URLs](pterodactyl-setup/02-creating-urls/README.md)
   * [02a) Create URL for pt-panel](pterodactyl-setup/02-creating-urls/02a-create-url-for-pt-panel.md)
   * [02b) Create URL for pt-wings](pterodactyl-setup/02-creating-urls/02b-create-url-for-pt-wings.md)
@@ -77,3 +77,4 @@
 * [00) Overview](troubleshooting/00-overview/README.md)
   * [01) The Node shows up as offline](troubleshooting/00-overview/01-the-node-shows-up-as-offline.md)
   * [02) My Panel login page is blank](troubleshooting/00-overview/02-my-panel-login-page-is-blank.md)
+  * [03) "x509: certificate signed by unknown authority" error (RHEL/CentOS/Fedora)](troubleshooting/00-overview/03-x509-certificate-signed-by-unknown-authority-error-rhel-centos-fedora.md)
