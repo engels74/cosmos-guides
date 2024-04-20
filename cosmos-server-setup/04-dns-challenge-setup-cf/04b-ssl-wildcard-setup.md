@@ -26,9 +26,10 @@ SSL Wildcards are clever because they use the root domain's SSL certificate for 
 3. Select "**(+) Add Record**"
 4. For Type, select "**CNAME**"
 5. For Name, type in `*` and nothing else.
-6. For IPv4 address, type in your Public IPv4 of the server hosting Cosmos Server
-7. Turn off Cloudflare's Proxy Tunnel. It messes up certain things unfortunately.
-8. Press Save
+6. For "Target", type in your web-domain of the server hosting Cosmos Server
+7. In my case, it would be `engels.zip`
+8. Turn off Cloudflare's Proxy Tunnel. It messes up certain things unfortunately.
+9. Press Save
 
 <figure><img src="https://i.imgur.com/gKawY7R.png" alt=""><figcaption></figcaption></figure>
 
